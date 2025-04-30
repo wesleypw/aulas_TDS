@@ -1,6 +1,16 @@
-valor = int(input("Digite um valor: "))
+opcao = int(input("Digite  um numero : "))
+while sequencia == 0:
+  
+    sequencia = opcao
+    sequencia *= (opcao - 1)
+    
+print(sequencia) 
 
-if valor %3 == 0 and valor %5 == 0:
-    print( valor+"é multiplo de 3 e 5")
+        
+        
+
+    
+    
+    
 
     
