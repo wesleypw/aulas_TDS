@@ -9,7 +9,7 @@ programa{
 
         cpf= cpf1 +"."+cpf2+"." + cpf3+ "-"+ cpf4
 
-        escreva(cpf)
+        escreva("CPF : ", cpf)
 
         
     }
