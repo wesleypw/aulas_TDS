@@ -30,3 +30,24 @@ Exemplo antes e depois de completar uma tarefa:
 - [x] Criar um novo repositório no GitHub <--- antes de realizar a tarefa
 - [x] Criar um novo repositório no GitHub <--- após realizar a tarefa
 ```
+###Etapa 2, Uso de variaveis
+
+## Objetivo
+Armazenar e exibir o CPF formatado utilizando variáveis.
+
+### Tarefas
+- [x] Criar **quatro variáveis inteiras**.
+- [x] Atribuir valores a essas variáveis (valores fixos).
+- [x] Exibir o CPF formatado a partir dessas variáveis.
+
+## Etapa 3: Entrada de Dados
+
+### Objetivo
+- [ ] Ler valores digitados para **quatro variáveis inteiras**.
+- [ ] Exibir o CPF formatado a partir dos valores lidos.
+
+---
+
+
+
+
