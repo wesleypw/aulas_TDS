@@ -49,5 +49,12 @@ Permitir a entrada de dados pelo usuário e exibir o CPF formatado.
 - [x] Ler valores digitados para **quatro variáveis inteiras**.
 - [x] Exibir o CPF formatado a partir dos valores lidos.
 
----
+## Etapa 4: Validando Positivos
+
+### Objetivos
+Valide para que os números digitados sejam maiores que zero.
+
+### Tarefas
+- [ ] Ler apenas valores maiores que zero.
+- [ ] Exibir o CPF formatado a partir dos valores lidos.
 
