@@ -3,13 +3,7 @@ programa{
         inteiro cpf1, cpf2, cpf3, cpf4
         cadeia cpf
 
-        cpf1 = 0
-        cpf2 = 0
-        cpf3 = 0
-        cpf4 = 0
-
-        
-
+      
         escreva("digite os 3 primeiros digitos: ")
         leia(cpf1)
          
@@ -22,7 +16,7 @@ programa{
         escreva("digite os ultimos dois digitos: ")
         leia(cpf4)
         
-        escreva(cpf1 + "." +cpf2+ "." + cpf3+ "-" + cpf4)
+        escreva("CPF ; " , cpf1 + "." +cpf2+ "." + cpf3+ "-" + cpf4)
 
 		
         
