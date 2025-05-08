@@ -43,8 +43,18 @@ Armazenar e exibir o CPF formatado utilizando variáveis.
 ## Etapa 3: Entrada de Dados
 
 ### Objetivo
-- [ ] Ler valores digitados para **quatro variáveis inteiras**.
-- [ ] Exibir o CPF formatado a partir dos valores lidos.
+- [x] Ler valores digitados para **quatro variáveis inteiras**.
+- [x] Exibir o CPF formatado a partir dos valores lidos.
+
+### Objetivos
+Receba um CPF completo (com pontos e traço) e mostre ele separado em 2 partes.
+
+### Tarefas
+- [ ] Coloque o nome dos integrantes estar na parte inicial do README.md.
+- [ ] Todos os integrantes devem ter suas contas no GitHub.
+- [ ] Leia um CPF completo do usuário (`XXX.XXX.XXX-YY`).
+- [ ] Separe os 9 números do CPF dos 2 Dígitos Verificadores em duas variáveis.
+- [ ] Exiba as duas variáveis separadamente.
 
 ---
 
