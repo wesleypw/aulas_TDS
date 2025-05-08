@@ -30,3 +30,42 @@ Exemplo antes e depois de completar uma tarefa:
 - [x] Criar um novo repositório no GitHub <--- antes de realizar a tarefa
 - [x] Criar um novo repositório no GitHub <--- após realizar a tarefa
 ```
+## Etapa 2: Uso de Variáveis
+
+### Objetivo
+Armazenar e exibir o CPF formatado utilizando variáveis.
+
+### Tarefas
+- [x] Criar **quatro variáveis inteiras**.
+- [x] Atribuir valores a essas variáveis (valores fixos).
+- [x] Exibir o CPF formatado a partir dessas variáveis.
+
+## Etapa 3: Entrada de Dados
+
+### Objetivo
+Permitir a entrada de dados pelo usuário e exibir o CPF formatado.
+
+### Tarefas
+- [x] Ler valores digitados para **quatro variáveis inteiras**.
+- [x] Exibir o CPF formatado a partir dos valores lidos.
+
+## Etapa 4: Validando Positivos
+
+### Objetivos
+Valide para que os números digitados sejam maiores que zero.
+
+### Tarefas
+- [x] Ler apenas valores maiores que zero.
+- [x] Exibir o CPF formatado a partir dos valores lidos.
+
+## Etapa 5: Entrando Texto
+
+### Objetivos
+Receba um CPF completo (com pontos e traço) e mostre ele separado em 2 partes.
+
+### Tarefas
+- [ ] Coloque o nome dos integrantes estar na parte inicial do README.md.
+- [ ] Todos os integrantes devem ter suas contas no GitHub.
+- [ ] Leia um CPF completo do usuário (`XXX.XXX.XXX-YY`).
+- [ ] Separe os 9 números do CPF dos 2 Dígitos Verificadores em duas variáveis.
+- [ ] Exiba as duas variáveis separadamente.
