@@ -46,6 +46,18 @@ Armazenar e exibir o CPF formatado utilizando variáveis.
 - [x] Ler valores digitados para **quatro variáveis inteiras**.
 - [x] Exibir o CPF formatado a partir dos valores lidos.
 
+
+## Etapa 4: Validando Positivos
+
+### Objetivos
+Valide para que os números digitados sejam maiores que zero.
+
+### Tarefas
+- [x] Ler apenas valores maiores que zero.
+- [x] Exibir o CPF formatado a partir dos valores lidos.
+
+## Etapa 5: Entrando Texto
+
 ### Objetivos
 Receba um CPF completo (com pontos e traço) e mostre ele separado em 2 partes.
 
@@ -56,6 +68,11 @@ Receba um CPF completo (com pontos e traço) e mostre ele separado em 2 partes.
 - [ ] Separe os 9 números do CPF dos 2 Dígitos Verificadores em duas variáveis.
 - [ ] Exiba as duas variáveis separadamente.
 
+---
+
+# Como usar checkbox no README
+
+Copie a seção `Desenvolvimento do Projeto` di
 ---
 
 
