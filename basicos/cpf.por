@@ -1,9 +1,11 @@
 programa{
     funcao inicio(){
 
-    	
+    	 
         inteiro cpf1, cpf2, cpf3, cpf4
         cadeia cpf
+        cadeia digito1
+        cadeia digito2 
 
 
         escreva("digite os 3 primeiros digitos(> 0): ")
@@ -36,9 +38,26 @@ programa{
         
         cpf = cpf1 + "." +cpf2+ "." + cpf3+ "-" + cpf4
         escreva("CPF: ", cpf)
+        digito1 =  cpf1 + "." +cpf2+ "." + cpf3
+        escreva("\nprimeiro digito"+ digito1)
+        digito2 = ":"+ cpf4
+        escreva("\nsegundo digito" + digito2)
         
+                
 
 		
         
     }
 }
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 1125; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
