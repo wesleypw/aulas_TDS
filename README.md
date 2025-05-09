@@ -1,5 +1,10 @@
 # Desenvolvimento do Projeto
 
+### Integrantes
+- Wesley Silva
+- Rafael Stamm
+- João Nunes
+
 ## Checklist de Etapas
 
 Cada etapa deverá ser documentada corretamente nas mensagens de commit, usando uma descrição como:
@@ -54,7 +59,7 @@ Receba um CPF completo (com pontos e traço) e mostre ele separado em 2 partes.
 
 ### Tarefas
 - [ ] Coloque o nome dos integrantes estar na parte inicial do README.md.
-- [ ] Todos os integrantes devem ter suas contas no GitHub.
+- [x] Todos os integrantes devem ter suas contas no GitHub.
 - [ ] Leia um CPF completo do usuário (`XXX.XXX.XXX-YY`).
 - [ ] Separe os 9 números do CPF dos 2 Dígitos Verificadores em duas variáveis.
 - [ ] Exiba as duas variáveis separadamente.
