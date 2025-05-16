@@ -1,9 +1,9 @@
 # Desenvolvimento do Projeto
 
 ### Integrantes
-- Wesley Silva
-- Rafael Stamm
-- João Nunes
+- [Wesley Silva] (https://github.com/wesleypw)
+- [Rafael Stamm] (https://github.com/Rafael-Stamm) 
+- [João Nunes] (https://github.com/JpNuro)
 
 ## Checklist de Etapas
 
