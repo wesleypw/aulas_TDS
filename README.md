@@ -64,13 +64,28 @@ Receba um CPF completo (com pontos e traço) e mostre ele separado em 2 partes.
 - [x] Separe os 9 números do CPF dos 2 Dígitos Verificadores em duas variáveis.
 - [x] Exiba as duas variáveis separadamente.
 
-
 ## Etapa 6: Validando Entrada
 
 ### Objetivos
 Receba um CPF completo e valide ele.
 
 ### Tarefas
-- [ ] Leia um CPF completo do usuário.
-- [ ] Valide para que o CPF esteja nos formatos `XXX.XXX.XXX-YY` ou `XXXXXXXXXYY`.
+- [x] Leia um CPF completo do usuário.
+- [x] Valide para que o CPF esteja nos formatos `XXX.XXX.XXX-YY` ou `XXXXXXXXXYY`.
 
+## Etapa 7: Dígito 1
+
+### Objetivos
+Calcular e encontrar o Primeiro Dígito Verificador - PDV.
+
+### Tarefas
+- [ ] Receba um CPF válido do usuário (formatos suportados `XXX.XXX.XXX-YY` ou `XXXXXXXXXYY`).
+- [ ] Se o formato não for válido, encerre o programa.
+- [ ] Calcule o [Primeiro Dígito Verificador](#cálculo-do-primeiro-dígito) conforme especificado.
+- Ao final, mostre :
+    - [ ] O CPF conforme foi digitado;
+    - [ ] O Primeiro Dígito Verificador encontrado;
+    - [ ] O resultado da comparação do PDV encontrado com o PDV do CPF digitado;
+- [ ] A atualização do código tem que ser feito por um integrante que ainda não realizou um [`Pull Request`](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork);
+
+---
