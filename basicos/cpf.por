@@ -1,63 +1,70 @@
-programa{
-    funcao inicio(){
+programa
+{
+	// biblioteca "x" as "y"
+	inclua biblioteca Texto --> t
+	inclua biblioteca Tipos --> ty
+	funcao inicio()
+	{
+		// o cpf lido em cadeia permite que não haja erros como um cpf não ser lido por começar com "0"
+		cadeia cpf, cpf_x = "", cpf_y = "", cpf_fmt = ""
+		inteiro tam
 
-    	 
-        inteiro cpf1, cpf2, cpf3, cpf4
-        cadeia cpf
-        cadeia digito1
-        cadeia digito2 
-
-
-        escreva("digite os 3 primeiros digitos(> 0): ")
-        leia(cpf1)
-        enquanto(cpf1 <=0){
-        	escreva("Valor inválido. Digite novamente: ")
-         leia(cpf1)
-        	}
-         
-        escreva("digite mais 3 digitos(> 0):  ")
-        leia(cpf2)
-        enquanto(cpf2 <=0){
-        	escreva("Valor inválido. Digite novamente: ")
-         leia(cpf2)
-        	}
-         
-        escreva("digite mais 3 digitos(> 0): ")
-        leia(cpf3)
-        enquanto(cpf3 <=0){
-        	escreva("Valor inválido. Digite novamente: ")
-         leia(cpf3)
-        	}
-         
-        escreva("digite os ultimos dois digitos(>0): ")
-        leia(cpf4)
-        enquanto(cpf4 <=0){
-        	escreva("Valor inválido. Digite novamente: ")
-         leia(cpf4)
-        	}
-        
-        cpf = cpf1 + "." +cpf2+ "." + cpf3+ "-" + cpf4
-        escreva("CPF: ", cpf)
-        digito1 =  cpf1 + "." +cpf2+ "." + cpf3
-        escreva("\nprimeiro digito"+ digito1)
-        digito2 = ":"+ cpf4
-        escreva("\nsegundo digito" + digito2)
-        
-                
-
-		
-        
-    }
+		// "faça enquanto" para repetir a requisição das informações dentro do laço
+		faca{
+			// permite a entrada de dados e a conversão deles
+			escreva("\nEscreva seu cpf\n\t>> ")
+			leia(cpf)
+			tam = t.numero_caracteres(cpf)
+			se(tam == 11 ou tam == 14){
+				// verifica se o formato é "somente números"
+				se(tam == 11){
+					// contagem para verificar o "cadeia cpf"
+					para(inteiro i = 0; i < tam; i++){
+						// verifica se está lidando com os números verificadores do cpf "y"
+						se(i == 9 ou i == 10) {
+							cpf_y += t.obter_caracter(cpf, i)
+						// verifica se está lidando com o resto do cpf "x"
+						} senao se(i < 9 e i >= 0) {
+							cpf_x += t.obter_caracter(cpf, i)
+						}
+					}
+				// imprime as informações que foram separadas em duas variáveis
+				escreva("\nCPF: " + cpf_x)
+				escreva("\nVerificadores: " + cpf_y)
+				} senao {
+					caracter letra
+					// verifica se o formato inclui "." e "-"
+					se(tam == 14){
+						// contagem para verificar o "cadeia cpf"
+						para(inteiro i = 0; i < tam; i++){
+							letra = t.obter_caracter(cpf, i)
+							// se o caracter da cadeia não for um número, será desconsiderado para o resto do código
+							se(ty.caracter_e_inteiro(letra)){
+								cpf_fmt += letra
+								se(t.numero_caracteres(cpf_fmt) == 11){
+									// contagem para verificar o "cadeia cpf_fmt (cpf formatado)"
+									para(inteiro j = 0; j < 11; j++){
+										// verifica se está lidando com os números verificadores do cpf "y"
+										se(j == 9 ou j == 10) {
+											cpf_y += t.obter_caracter(cpf_fmt, j)
+										// verifica se está lidando com o resto do cpf "x"
+										} senao se(j < 9 e j >= 0) {
+											cpf_x += t.obter_caracter(cpf_fmt, j)
+										}
+									}
+								}
+							}
+						}
+					// imprime as informações que foram separadas em duas variáveis
+					escreva("\nCPF: " + cpf_x)
+					escreva("\nVerificadores: " + cpf_y)
+					}
+				}
+			// se nenhum formato for obedecido, repita o laço
+			} senao {
+				escreva("\n\tFormato incompatível.")
+				escreva("\n\tEscreva apenas em números ou no formato 'xxx.xxx.xxx-xx'")
+			}
+		} enquanto(tam != 11 e tam != 14)
+	}
 }
-
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 1125; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
