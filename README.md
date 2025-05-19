@@ -82,6 +82,10 @@ O primeiro dígito verificador é `3`.
 
 ---
 
+<<<<<<< main
+# Desenvolvimento do Projeto
+
+=======
 
 
 # Desenvolvimento do Projeto
@@ -91,6 +95,7 @@ O primeiro dígito verificador é `3`.
 - [Rafael Stamm](https://github.com/Rafael-Stamm) 
 - [João Nunes](https://github.com/JpNuro)
 
+>>>>>>> main
 ## Checklist de Etapas
 
 Cada etapa deverá ser documentada corretamente nas mensagens de commit, usando uma descrição como:
@@ -159,6 +164,31 @@ Receba um CPF completo e valide ele.
 - [x] Leia um CPF completo do usuário.
 - [x] Valide para que o CPF esteja nos formatos `XXX.XXX.XXX-YY` ou `XXXXXXXXXYY`.
 
+<<<<<<< main
+## Etapa 7: Dígito 1
+
+### Objetivos
+Calcular e encontrar o Primeiro Dígito Verificador - PDV.
+
+### Tarefas
+- [x] Receba um CPF válido do usuário (formatos suportados `XXX.XXX.XXX-YY` ou `XXXXXXXXXYY`).
+- [x] Se o formato não for válido, encerre o programa.
+- [ ] Calcule o [Primeiro Dígito Verificador](#cálculo-do-primeiro-dígito) conforme especificado.
+- Ao final, mostre :
+    - [ ] O CPF conforme foi digitado;
+    - [ ] O Primeiro Dígito Verificador encontrado;
+    - [ ] O resultado da comparação do PDV encontrado com o PDV do CPF digitado;
+- [ ] A atualização do código tem que ser feito por um integrante que ainda não realizou um [`Pull Request`](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork);
+
+---
+
+# Como usar checkbox no README
+
+Copie a seção `Desenvolvimento do Projeto` direto no seu `README.md`.<br>
+Marque as tarefas concluídas trocando `[ ]` por `[x]` à medida que for avançando.
+
+=======
 #
+>>>>>>> main
 
 
