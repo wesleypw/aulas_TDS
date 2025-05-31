@@ -74,8 +74,9 @@ programa
 	{
 		// o cpf lido em cadeia permite que não haja erros como um cpf não ser lido por começar com "0"
 		cadeia cpf, cpf_x = "", cpf_y = "", cpf_fmt = "", dv1, dv2
-		caracter dgt1
+		caracter dgt1, dgt2
 		inteiro tam
+		logico valid1, valid2
 
 		// "faça enquanto" para repetir a requisição das informações dentro do laço
 		faca{
@@ -93,14 +94,24 @@ programa
 						cpf_y = sep_cpf_y(tam, cpf, cpf_y)
 						// cpf_y separado em dois dígitos
 						dgt1 = t.obter_caracter(cpf_y, 0)
+						dgt2 = t.obter_caracter(cpf_y, 1)
 						// exibe o CPF e os dígitos verificadores digitados
 						escreva("\nCPF: ", cpf)
 						escreva("\nDV1 digitado: ", dgt1)
+						escreva("\nDV2 digitado: ", dgt2)
 						// realiza o cálculo dos dígitos verificadores
 						dv1 = dv_calc(cpf_x, 10, 9)
+						dv2 = dv_calc((cpf_x + dv1), 11, 10)
 						escreva("\nDV1 calculado: ", dv1)
+						escreva("\nDV2 calculado: ", dv2)
 						// vericicando se os dígitos verificadores são compatíveis com os digitados
-						testify(dv1, dgt1, 1)
+						valid1 = testify(dv1, dgt1, 1)
+						valid2 = testify(dv2, dgt2, 2)
+						se(valid1 e valid2){
+							escreva("\nO CPF é válido :)")
+						} senao {
+							escreva("\nO CPF não é valido :(")
+						}
 					// se algo digitado não for inteiro, incorreto
 					} senao {
 						msg_erro()
@@ -127,14 +138,24 @@ programa
 							cpf_y = sep_cpf_y(tam, cpf_fmt, cpf_y)
 							// cpf_y separado em dois dígitos
 							dgt1 = t.obter_caracter(cpf_y, 0)
+							dgt2 = t.obter_caracter(cpf_y, 1)
 							// exibe o CPF e os dígitos verificadores digitados
 							escreva("\nCPF: ", cpf_fmt)
 							escreva("\nDV1 digitado: ", dgt1)
+							escreva("\nDV2 digitado: ", dgt2)
 							// realiza o cálculo dos dígitos verificadores
 							dv1 = dv_calc(cpf_x, 10, 9)
+							dv2 = dv_calc((cpf_x + dv1), 11, 10)
 							escreva("\nDV1 calculado: ", dv1)
+							escreva("\nDV2 calculado: ", dv2)
 							// vericicando se os dígitos verificadores são compatíveis com os digitados
-							testify(dv1, dgt1, 1)
+							valid1 = testify(dv1, dgt1, 1)
+							valid2 = testify(dv2, dgt2, 2)
+							se(valid1 e valid2){
+								escreva("\nO CPF é válido :)")
+							} senao {
+								escreva("\nO CPF não é valido :(")
+							}
 						// se algo não foi inteiro, incorreto
 						} senao {
 							msg_erro()
