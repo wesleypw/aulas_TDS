@@ -1,5 +1,3 @@
----
-
 # Desenvolvimento do Projeto
 
 ### Integrantes
