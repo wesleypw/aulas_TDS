@@ -113,5 +113,3 @@ A partir do código original, recriem ele usando o Python.
 
 ### Tarefas
 - [ ] Recriar o código, a partir do original, em Python;
-
----
