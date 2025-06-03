@@ -9,7 +9,7 @@ programa
 		escreva("\n\tFormato incompatível.")
 		escreva("\n\tEscreva apenas em números ou no formato 'xxx.xxx.xxx-xx'")
 	}
-	
+
 	// função separar_cpf_x(   tam,      cpf,      cpf_x   )
 	funcao cadeia sep_cpf_x(inteiro t, cadeia c, cadeia cx){
 		para(inteiro i = 0; i < t; i++){
@@ -40,7 +40,6 @@ programa
 		inteiro soma = 0
 		inteiro resto
 		cadeia resultado
-
 		// cont = 8 no dv1 | cont = 9 no dv2
 		para(inteiro i = 0; i < cont; i++){
 			cpf_atual = ty.caracter_para_inteiro(t.obter_caracter(c, i))
@@ -56,7 +55,7 @@ programa
 		}
 		retorne resultado
 	}
-
+  
 	// função que verifica se o digitado confere com o número encontrado no cálculo
 	           // calculado    digitado    (DV1 ou DV2?)
 	funcao logico testify(cadeia d, caracter dt, inteiro id){
@@ -69,7 +68,7 @@ programa
 			retorne falso
 		}
 	}
-	
+  
 	funcao inicio()
 	{
 		// o cpf lido em cadeia permite que não haja erros como um cpf não ser lido por começar com "0"
@@ -77,7 +76,6 @@ programa
 		caracter dgt1, dgt2
 		inteiro tam
 		logico valid1, valid2
-
 		// "faça enquanto" para repetir a requisição das informações dentro do laço
 		faca{
 			// permite a entrada de dados e a conversão deles
@@ -112,6 +110,9 @@ programa
 						} senao {
 							escreva("\nO CPF não é valido :(")
 						}
+					// se tudo digitado for inteiro, está correto
+					se(ty.cadeia_e_inteiro(cpf, 10)){
+						escreva("O cpf é compatível com o formato\nFormato - 'somente números'\nCPF - ", cpf)
 					// se algo digitado não for inteiro, incorreto
 					} senao {
 						msg_erro()
@@ -127,7 +128,7 @@ programa
 						// se o caracter da cadeia não for um número, será desconsiderado para o resto do código
 						se(ty.caracter_e_inteiro(digito)){
 							cpf_fmt += digito
-						}
+						}	
 					}
 					// depois de converter, retirando o que não for inteiro, verifica "somente números"
 					se(t.numero_caracteres(cpf_fmt) == 11){
@@ -156,6 +157,9 @@ programa
 							} senao {
 								escreva("\nO CPF não é valido :(")
 							}
+						// se o que sobrou foi inteiro, está correto
+						se(ty.cadeia_e_inteiro(cpf_fmt, 10)){
+							escreva("O cpf é compatível com o formato\nFormato - 'xxx.xxx.xxx-xx'\nCPF - ", cpf_fmt)
 						// se algo não foi inteiro, incorreto
 						} senao {
 							msg_erro()
