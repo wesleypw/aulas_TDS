@@ -1,6 +1,8 @@
-def valida_cpf(cpf: str) -> bool:
+def valida_cpf(cpf: str) -> bool: #valor booleano
     # Remove todos os caracteres que não são números
-    cpf = ''.join(filter(str.isdigit, cpf))
+    cpf = ''.join(filter(str.isdigit, cpf)) #o join vai remover todos os espaço, 
+                                            #o filter vai remover todos os caracteres que não são números 
+                                            #e o str isdigit é uma função que retorna True se o caractere for um dígito.
     
     # Verifica se o tamanho é 11 (sem formatação)
     if len(cpf) != 11:
